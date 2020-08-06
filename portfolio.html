@@ -34,17 +34,48 @@
 	        padding: 0;
 	      }
 
-	      .temp {
-		  	width: 50%;
-		  	font-family: 'Quicksand';
-		  	text-align: center;
-		  	margin-top: 15%;
+		.rows {
+		  display: flex;
+		  margin-top: 5%;
+		  margin-bottom: 0%;
+		}
 
-			border: 6px solid transparent;
-		  	border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
-		  	border-image-slice: 1;
-		  	width: 50%;
-		  }
+		.column {
+		  height: 50%;
+		}
+
+		.container {
+		  position: relative;
+		  width: 100%;
+		  height: 100%;
+		}
+
+		.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: #008CBA;
+		  font-family: 'Quicksand';
+		  color: white;
+		  font-size: 100%;
+		  text-align: center;
+		}
+
+		.container:hover .overlay {
+		  opacity: 1;
+		}
 
 		</style>
 	</head>
@@ -60,13 +91,93 @@
 				<li> <a href="contact.html"> CONTACT </a></li>
 			</ul>			
 		</div>
-		<div class="temp" style="background: #ffff; margin-left: 25%;">
-			<h1 style="font-size: 40px; font-style: bold; padding-top: 10px; line-height: 0.25em;"> Page is Under Construction! </h1>
-			<p style="font-size: 20px; color: #737373; padding-bottom: 5px;"> Come Back Soon! </p>
-			<p style="font-size: 25px; padding-bottom: 10px"> 
-				<a href="home.html">Back to Homepage</a>
-			</p>
-		</div>
 	</header>
+
+	<div class="rows">
+	  <div class="column">
+		<div class="container">
+		  <img src="MLLogo.png" alt="Machine Learning" class="image">
+		  <div class="overlay">
+		    	Machine Learning (Apr 2018)
+		    	<p>Created and trained a classifier to identify the subject of sample Piazza posts as an introduction to natural language processing and AI. Project was implemented using recursion, binary search trees, and maps.
+				</p>
+
+				<p>C++ / Email for Github Link</p>
+		  </div>
+		</div>
+
+		<div class="container">
+		  <img src="PW.png" alt="Personal Website" class="image">
+		  <div class="overlay">
+		    	Personal Website (Aug 2020)
+		    	<p>A project I created in the summer of 2020 to highlight my professional portfolio as well as some of my hobbies! Taught myself HTML and CSS using free online resources and familiarized myself with using Github.
+				</p>
+
+				<p>HTML & CSS / Click Here for Github Link</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="column">
+		<div class="container">
+		  <img src="pokemonLogo.jpg" alt="Pokemon" class="image">
+		  <div class="overlay">
+		    Pokemon TSP (Dec 2019)
+		    <p> Given a map with coordinates of Pokemon, designed a faster approximate algorithm for the TSP problem by using Prim's to create a MST. Also implemented a branch and bound algorithm to find the optimal solution. </p>
+		    <p> C++ / Email for GitHub Link </p> 
+		  </div>
+		</div>
+
+		<div class="container">
+		  <img src="cacheLogo.png" alt="Cache" class="image">
+		  <div class="overlay">
+		    Cache Simulator (Apr 2020)
+		    <p> Coded a simulator that executes assembly-language programs with a customizable "cache" that stores and evicts data as needed depending on specified capacity. </p>
+		    <p> C / Email for GitHub Link</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="column">
+		<div class="container">
+		  <img src="log.png" alt="Logger" class="image">
+		  <div class="overlay">
+		    Logger (Nov 2019)
+		    <p>Given a log file, allows user to search for specific entries containing user defined keywords, categories, or timestamps, and offers various options to help user sort the log file. Implemented using hash tables and deques. </p>
+		    <p> C++ / Email for GitHub Link</p>
+		  </div>
+		</div>
+
+		<div class="container">
+		  <img src="euchreLogo.png" alt="Euchre" class="image">
+		  <div class="overlay">
+			Euchre (Feb 2019)
+			<p>Wrote a Euchre (card game) simulator with up to four playable characters or option to play with non-human players implemented using a simple strategy. Learned about abstract data types, object-oriented programming, and polymorphism.  </p>
+			<p>C++ / Email for GitHub Link</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="column">
+		<div class="container">
+		  <img src="treasureLogo.png" alt="Treasure" class="image">
+		  <div class="overlay">
+		    Treasure Hunt (Sep 2019)
+		    <p> Wrote a program that would exlpore a given treasure map until a travelable path to treasure was found. Project was implemented using stacks, queues, and explored backtracking algorithms. 
+		    </p> 
+		    <p> C++ / Email for GitHub Link</p>
+		  </div>
+		</div>
+
+		<div class="container">
+		  <img src="elevatorLogo.jpg" alt="Elevators" class="image">
+		  <div class="overlay">
+		    Elevators (Dec 2018) 
+			<p>Created a strategy game where the user is an elevator servicer with the goal to satisfy as many patrons as possible. Game includes randomly generated patrons with varying anger/patience levels spanning ten floors and an AI player option. </p>
+			<p>C++ / Email for GitHub Link </p>
+		  </div>
+		</div>
+	  </div>
+	</div>
 </body>
 </html>
